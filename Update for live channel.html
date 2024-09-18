@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Playlists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6a88, #ff9a44, #fcb045);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            padding: 16px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            margin: 16px;
+        }
+
+        .header input[type="file"],
+        .header input[type="text"],
+        .header select {
+            margin: 10px;
+        }
+
+        .header button {
+            padding: 10px 15px;
+            background-color: #ff6a88;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header button:hover {
+            background-color: #ff9a44;
+        }
+
+        .playlist-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 16px;
+        }
+
+        .playlist-buttons button {
+            padding: 12px 20px;
+            background: #ff6a88;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .playlist-buttons button:hover {
+            background: #ff9a44;
+            transform: scale(1.05);
+        }
+
+        .playlist-buttons button:focus {
+            outline: none;
+        }
+
+        .container {
+            display: none; /* Initially hidden */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .playlist {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .playlist:hover {
+            transform: translateY(-5px);
+        }
+
+        .playlist img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .playlist div {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #videoPlayer {
+            display: none;
+            padding: 16px;
+            text-align: center;
+        }
+
+        #videoPlayer video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #backButton {
+            display: none;
+            padding: 10px 15px;
+            background-color: #ff6a88;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        #backButton:hover {
+            background-color: #ff9a44;
+        }
+    </style>
+</head>
+    <div class="header">
+        <h1>DAR SAYS JUST CLICK BELOW PLAYLISTS AND START WATCHING FREE OR LINK YOUR IPTV Playlists</h1>
+                <script type='text/javascript' src='//sillinessrobnotoriety.com/bf/0f/40/bf0f400647de65800fb400422f57be94.js'></script>
+        <script type='text/javascript' src='//sillinessrobnotoriety.com/bf/0f/40/bf0f400647de65800fb400422f57be94.js'></script>
+               <div class="playlist-buttons">
+            <!-- Initial playlist buttons here -->
+            <button data-url="https://iptv-org.github.io/iptv/regions/amer.m3u">Americas</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/arab.m3u">Arab</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/asia.m3u">Asia</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/apac.m3u">APAC</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/asean.m3u">ASEAN</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/amer.m3u">Samsung tv</button>
+            <button data-url="https://i.mjh.nz/SamsungTVPlus/all.m3u8">Arab</button>
+            <button data-url="https://www.apsattv.com/xumo.m3u">MANU tv</button>
+            <button data-url="https://www.apsattv.com/redbox.m3u">RED BOX</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/asean.m3u">ASEAN</button>
+            <button data-url="https://www.apsattv.com/tubi.m3u">TUBI TV</button>
+            <button data-url="https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8">FREE TV</button>
+            <button data-url="https://www.apsattv.com/distro.m3u">DISTRO TV</button>
+            <button data-url="https://www.apsattv.com/rok.m3u">RUKU TV</button>
+            <button data-url="https://www.apsattv.com/firetv.m3u">FIRE TV</button>
+            <button data-url=" https://www.apsattv.com/cineverse.m3u">CINEVERSE TV</button>
+            <button data-url="https://www.apsattv.com/klowd.m3u">KLOWD TV</button>
+            <button data-url="https://www.apsattv.com/localnow.m3u">LOCAL NOW</button>
+            <button data-url="https://www.apsattv.com/xiaomi.m3u">XIAMI TV</button>
+            <button data-url="https://www.apsattv.com/tablo.m3u">TABLO TV</button>
+            <button data-url="https://www.apsattv.com/lg.m3u">LG TV</button>
+            <button data-url="https://www.apsattv.com/vizio.m3u">VIZIO TV</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/asia.m3u">Asia</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/apac.m3u">APAC</button>
+            <button data-url="https://i.mjh.nz/PBS/all.m3u8">PBS</button>
+            <button data-url="https://i.mjh.nz/Stirr/all.m3u8">LAW AND CRIME</button>
+            <button data-url="https://www.apsattv.com/tcl.m3u">TCL TV</button>
+            <button data-url="	https://i.mjh.nz/PlutoTV/all.m3u8">PLATOO TV</button>
+            <button data-url="https://m3u.ch/pl/a0715d97b612c11a8525539cdd7bfcfa_098a837fcfcb2dcdc8e6c713582f0e49.m3u">Sony Pakage</button>
+            <button data-url="https://raw.githubusercontent.com/FunctionError/PiratesTv/main/combined_playlist.m3u">Bangladeshi</button>
+            <button data-url="https://m3u.ch/pl/8d06ba981bcf1e6f8699d9488d8a99d4_46f3ab26868246ea2ac0bf2fca31800a.m3u">IPTV 2050</button>
+            <button data-url="https://iptv-org.github.io/iptv/regions/apac.m3u">Asia Pacific</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/kids.m3u">Kids</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/lifestyle.m3u">Life Style</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/movies.m3u">Movies</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/animation.m3u">Animation</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/auto.m3u">Auto</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/buisness.m3u">Buisness</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/music.m3u">Music</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/news.m3u">News</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/outdoor.m3u">outdoor</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/relax.m3u">Relax</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/science.m3u">Science</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/religious.m3u">Religious</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/sports.m3u">Sports</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/travel.m3u">Travel</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/weather.m3u">Weather</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/undefined.m3u">Undefined</button>
+            <button data-url="https://iptv-org.github.io/iptv/countries/pk.m3u">Pakistani</button>
+            <button data-url="https://iptv-org.github.io/iptv/countries/in">Indian</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/comedy.m3u">Comedy</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/cooking.m3u">Cooking</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/classic.m3u">Classic</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/documentary.m3u">Documentary</button>
+	    <button data-url="https://iptv-org.github.io/iptv/categories/education.m3u">Education</button>
+            <button data-url="https://iptv-org.github.io/iptv/categories/entertainment.m3u">Entertainment</button>
+            <!-- Add up to 45 more buttons here -->
+        </div>
+        <input type="file" id="fileInput" accept=".m3u,.m3u8" />
+        <input type="text" id="linkInput" placeholder="Enter online playlist link" />
+        <button id="addLinkButton">Add Link</button>
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <div id="videoPlayer">
+        <video id="player" controls></video>
+    </div>
+
+    <div class="container">
+        <!-- Playlists will be inserted here by JavaScript -->
+    </div>
+
+    <button id="backButton">Back to Playlist</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        let lastPlaylistUrl = ''; // To store the last loaded playlist URL
+
+        async function fetchAndParseM3U(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const text = await response.text();
+                const lines = text.split('\n');
+                const playlists = [];
+                let currentPlaylist = {};
+
+                lines.forEach(line => {
+                    if (line.startsWith('#EXTINF:')) {
+                        const info = line.split(',');
+                        currentPlaylist.name = info[1]?.trim() || 'Unknown Channel';
+                        const logoMatch = info[0].match(/tvg-logo="([^"]+)"/);
+                        currentPlaylist.logo = logoMatch ? logoMatch[1] : 'https://via.placeholder.com/100';
+                    } else if (line.startsWith('http')) {
+                        currentPlaylist.url = line.trim();
+                        playlists.push(currentPlaylist);
+                        currentPlaylist = {};
+                    }
+                });
+
+                return playlists;
+            } catch (error) {
+                displayError(`Failed to fetch playlist: ${error.message}`);
+                return [];
+            }
+        }
+
+        function playStream(url) {
+            const player = document.getElementById('player');
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(url);
+                hls.attachMedia(player);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    player.play();
+                });
+            } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
+                player.src = url;
+                player.addEventListener('loadedmetadata', function () {
+                    player.play();
+                });
+            }
+        }
+
+        function createPlaylistElement(playlist) {
+            const div = document.createElement('div');
+            div.className = 'playlist';
+
+            const img = document.createElement('img');
+            img.src = playlist.logo;
+            img.alt = playlist.name;
+            div.appendChild(img);
+
+            const nameDiv = document.createElement('div');
+            nameDiv.textContent = playlist.name;
+            div.appendChild(nameDiv);
+
+            div.addEventListener('click', () => {
+                document.querySelector('.container').style.display = 'none'; // Hide container
+                document.getElementById('videoPlayer').style.display = 'block'; // Show video player
+                playStream(playlist.url);
+            });
+
+            return div;
+        }
+
+        function displayError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = message;
+        }
+
+        async function loadPlaylist(url) {
+            lastPlaylistUrl = url; // Save the last playlist URL
+            const playlists = await fetchAndParseM3U(url);
+            const container = document.querySelector('.container');
+            container.innerHTML = '';
+            playlists.forEach(playlist => {
+                const playlistElement = createPlaylistElement(playlist);
+                container.appendChild(playlistElement);
+            });
+
+            if (playlists.length > 0) {
+                document.querySelector('.container').style.display = 'grid'; // Show container
+                document.querySelector('.playlist-buttons').style.display = 'none'; // Hide playlist buttons
+                document.getElementById('backButton').style.display = 'inline-block'; // Show back button
+            }
+        }
+
+        document.querySelectorAll('.playlist-buttons button').forEach(button => {
+            button.addEventListener('click', () => {
+                loadPlaylist(button.getAttribute('data-url'));
+            });
+        });
+
+        document.getElementById('backButton').addEventListener('click', () => {
+            const videoPlayer = document.getElementById('videoPlayer');
+            if (videoPlayer.style.display === 'block') {
+                // If the video player is visible, go back to the playlist view
+                videoPlayer.style.display = 'none'; // Hide video player
+                document.querySelector('.container').style.display = 'grid'; // Show container
+            } else {
+                // If the playlist view is visible, go back to the playlist selection
+                document.querySelector('.container').style.display = 'none'; // Hide container
+                document.querySelector('.playlist-buttons').style.display = 'flex'; // Show playlist buttons
+                document.getElementById('backButton').style.display = 'none'; // Hide back button
+            }
+            
+            const player = document.getElementById('player');
+            player.pause();
+            player.src = ''; // Stop and clear video
+        });
+
+        document.getElementById('addLinkButton').addEventListener('click', () => {
+            const linkInput = document.getElementById('linkInput');
+            const url = linkInput.value.trim();
+            if (url) {
+                loadPlaylist(url);
+                linkInput.value = ''; // Clear the input field
+            } else {
+                displayError('Please enter a valid URL.');
+            }
+        });
+
+        document.getElementById('fileInput').addEventListener('change', async (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = async (e) => {
+                    const text = e.target.result;
+                    const url = URL.createObjectURL(new Blob([text], { type: 'text/plain' }));
+                    loadPlaylist(url);
+                };
+                reader.readAsText(file);
+            }
+        });
+    </script>
+    <script type="text/javascript">
+	atOptions = {
+		'key' : 'd6804aee84d31c7a3805f4d42663e0f3',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'b0842ae8b4e327c08ac4b8d10eaad52f',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//sillinessrobnotoriety.com/b0842ae8b4e327c08ac4b8d10eaad52f/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '8b79b10140cd2ac0798a9dd9f9da298e',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//sillinessrobnotoriety.com/8b79b10140cd2ac0798a9dd9f9da298e/invoke.js"></script>
+
+</body>
+</html>
