@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <style>
+        /* Style for the media player and other elements */
+        #video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background-color: black;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style for the overlay logo */
+        #own-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+        }
+
+        #own-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        /* Style for the breaking news and social icons */
+        #breaking-news {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 14px;
+            z-index: 10;
+        }
+
+        #social-icons {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        #social-icons a {
+            margin: 0 5px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="video-container">
+        <!-- Video player -->
+        <video id="videoPlayer" controls>
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Custom overlay logo -->
+        <div id="own-logo">
+            <img src="drmlive.png" alt="Dar TV Logo">
+        </div>
+
+        <!-- Breaking news scrolling text -->
+        <div id="breaking-news">
+            Breaking News: Latest headlines and updates!
+        </div>
+
+        <!-- Social media icons -->
+        <div id="social-icons">
+            <a href="https://facebook.com" target="_blank">FB</a>
+            <a href="https://twitter.com" target="_blank">TW</a>
+            <a href="https://instagram.com" target="_blank">IG</a>
+        </div>
+    </div>
+
+    <script>
+        // Example video source for testing
+        document.getElementById('videoPlayer').src = 'http://iptv.sansat.top:8880/get.php?username=91029342&password=69450928&type=m3u_plus&output=hls';
+    </script>
+</body>
+</html>
