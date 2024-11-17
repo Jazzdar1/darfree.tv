@@ -1,32 +1,65 @@
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://vg-republictvyupp.akamaized.net/ptnr-yupptv/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-884117/848b4840-dc00-4f9b-8064-0101d8492235/2.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - OLD ",IR: OLD CRICKET CHANNEL
 https://cc-bpss9asqfihqh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-bpss9asqfihqh/scheduler/scheduleMaster/453.m3u8
-https://cdn.troya.one/ch1988/mono.m3u8?token=rl_aadam.UdI0zA87jcz080oIulX2iCpFZbpMMqq-6-4vFTZzyqSBH3QV-i0fbkSlM6VW0S_5
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - JIO TV",IR: JIO TV
 https://prod-ent-live-gm.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IND",IR: HISTORY TV
 https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="PK: BOL NEWS " tvg-logo="http://img-cdn.curl.pk:8880/chimg/5622262280.png" group-title="PK - Pakistan TV",PK: BOL NEWS 
 https://ythls.armelin.one/channel/UCz2yxQJZgiB_5elTzqV7FiQ.m3u8 
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://d1dkmoiqsq7zly.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/ottplay_dtv_feed-d3p2ch1hzov3hg/63ffcf78-8561-4df2-bafa-2398f5513f32/1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dai-partner.fancode.com/linear/hls/pb/event/LwFui1EhQNuRplvs8YiVtg/stream/0825b0f7-b298-4d09-a9d4-c7bb9655f898:TPE2/variant/129fed9af4c1d89283a464d47de11c8f/bandwidth/1756808.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://z5ak-cmaflive.zee5.com/cmaf/live/2105531/ZeeTVHDMSLELE/index.m3u8?hdnea=st=1728739914~exp=1728740214~acl=*~id=62b8a815-b852-4fb8-97bc-3826e50e9b28~hmac=079168409cd5ea54f66a0175843a3fe12ad4ea26bb7403685fd1c5730254636e&originpath=/linear/hls/pb/event/ACMbQPITRvKQ46rSG8AUNw/stream/adced4bd-4fd6-4d31-80f1-a9df85d0e0bd:SIN2/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dztlhgid9me95.cloudfront.net/live-tv/Vidgyor/timesnow/timesnow_master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://cable25tataplay.akamaized.net/annnews/annnews/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://cors-proxy.cooks.fyi/https://dfwlive-v1-c1p3-sponsored.s.llnwi.net/Content/HLS.cps/Live/channel(WILLXT-3292.dfw.1080)/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dai.fancode.com/primary/110623_english_hls_5957ta-di/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://ythls.armelin.one/channel/UCcmpeVbSSQlZRvHfdC-CRwg.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA3)/variant.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://cdn-bd.televisionbd.com/Star-Sports-1-HD/tracks-v1/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://cdn-bd.televisionbd.com/Tsports-Bd/tracks-v1/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://fr.globalplay.live/Sports-1/tracks-v1/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://cdn-bd.televisionbd.com/Tsports-Bd/tracks-v1/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://streams2.sofast.tv/ptnr-yupptv/title-CARTOON-TV-CLASSICS-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dplus.gammacdn.workers.dev/videos/113.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dai.google.com/linear/hls/event/yvQpXDAeRMGU25KTu--V6Q/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://amg01448-samsungin-cnnnewsnw18-samsungin-ad-gv.amagi.tv/playlist/amg01448-samsungin-cnnnewsnw18-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://streams.sofast.tv/ptnr-yupptv/title-COLOUR-BLIND-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7e58f6fd-62bc-49bc-9ec6-2766ed521743/manifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://epiconvh.s.llnwi.net/epic/master.m3u8 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8 https://live.ishiacloud.com/haditv.co.uk/haditv1.m3u8   https://zoomoo-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://dplus.gammacdn.workers.dev/videos/99.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Discover Pakistan
 https://bloodydisgusting-tcl.amagi.tv/playlist.m3u8  https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://huntstream-viewlift.amagi.tv/playlist.m3u8 https://insighttv-samsung-us.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="IR: Aryaee" tvg-logo="" group-title="IR - IRAN TV",IR: Aryaee
 https://d18dyiwu97wm6q.cloudfront.net/playlist.m3u8
+https://vod-vision.fancode.com/vision/skillup-uploads/cms-media-rth/1731808142/c20b1572-d2c3-4401-84e2-59008e38fa54/index.m3u8
+https://z5ak-cmaflive.zee5.com/cmaf/live/2105552/ZeeCinemaELE/master.m3u8?hdnea=st=1731859999~exp=1731860299~acl=*~id=f9d69abd-ebb5-40cf-b612-14bf2b1e35a8~hmac=e5f7e474346669fb86910a4e2e4591fb8c8561968e89bf753b7c6f7d3633bb34&originpath=/linear/hls/pb/event/XUmyfp_MQk2H_cTDIvz6aA/stream/ffa64aa5-d368-46a9-89d4-c73fa260d257:SIN/master.m3u8
+https://z5ak-cmaflive.zee5.com/cmaf/live/2105504/AndTVHDELE/index.m3u8?hdnea=st=1731860072~exp=1731860372~acl=*~id=5e895f2a-3a74-4706-9793-15c8e4d2cb00~hmac=57d61971aa2cf111ded85ea165d90273e3645a40a9564781bdda0d64ad24805b&originpath=/linear/hls/pb/event/gsfwKz83TGOa7Mv-RswgaA/stream/aa34b7dc-0f63-43ee-9b06-bb687c5e4cd2:TPE2/master.m3u8
